@@ -1,0 +1,275 @@
+/* Template styling */
+
+html, body {
+  margin: 0;
+}
+
+body {
+  background: url('../images/dark-linen.png') repeat;
+  font-family: 'Roboto', sans-serif;
+}
+div#about  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 20%;
+}
+#home h1 {
+  text-align: center;
+}
+div#home {
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  width: 30%;
+
+}
+
+li#pointer {
+  float: left;
+}
+
+div#app {
+  display: grid;
+  max-width: 1400px;
+  margin: 0 auto;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: 
+    'header header header'
+    'menu menu menu'
+    'container container container'
+    'footer footer footer'
+  ;
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+  height: 200px;
+  background: url('../images/banner-top.png');
+}
+
+nav {
+  grid-area: menu;
+  height: 60px;
+  background: url('../images//banner-bottom.png');
+  font-size: 1.75em;
+  line-height: 60px;
+  padding: 20px;
+  color: white;
+  display: flex;
+}
+
+nav a {
+  color: rgb(95, 191, 255);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: rgb(198, 115, 247);
+}
+
+#container {
+  grid-area: container;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
+  color: #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+a.active {
+  color: white;
+  font-weight: bold;
+}
+
+input#search {
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  height: 24px;
+  flex: 1 0;
+  margin: auto;
+}
+
+span.favorite {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+span.favorite.active {
+  color: rgb(255, 0, 149);
+}
+
+span.favorite:hover {
+  color:rgb(187, 135, 255)
+}
+
+/* End template styling */
+
+
+
+/* Add your styles below */
+
+
+
+#categories{
+  color: rgb(187, 135, 255);
+} 
+
+.content{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* by Simeon Mladenov */
+}
+
+
+.single-box{
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20 px;
+  height: 150px;
+  width: 180px;
+  margin: 30px;
+  color: rgb(187, 135, 255);
+  border: solid 1px;
+  border-color: rgb(187, 135, 255);;
+  
+}
+
+.name-of-box{
+  background:none;
+  margin: 25px;
+  font-size: 30px;
+  color: rgb(187, 135, 255);
+  font-weight: bolder;
+  
+  
+}
+.movies-count{
+  background: none;
+  color: #ccc;
+  bottom: 10;
+  margin:15px
+  
+}
+
+.view-category{
+  align-self: center;
+  padding: 2px;
+  width: 100px;
+  background: black;
+  color: rgb(187, 135, 255);
+  border: 0px;
+}
+
+.view-category:hover {
+  background: rgb(187, 135, 255);
+  color: black;
+}
+
+
+/* for movie simple view */
+.movieCard {  
+  display: inline-block;  
+  min-width: 260px;  
+  max-width: 260px;
+  background-color: black;
+  border-radius: 15px;
+  border: 1px solid rgb(187, 135, 255, 0.3);
+  text-align: center;
+  margin: 5px;
+  padding: 10px
+}
+
+.movieCardTitle {  
+  display: block;
+  color: rgb(187, 135, 255);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;  
+}
+
+.movieCardYear {
+  display: block;
+  font-weight: bold;
+  margin: 0;
+}
+
+.posterImage {
+  width: 150px;
+  border: 1px solid white;
+  margin: 10px;
+}
+
+.vDetails {
+  margin-bottom: 10px;
+}
+
+.dLink {  
+  text-decoration: none;
+  color: rgb(187, 135, 255);
+}
+
+.dLink:hover {  
+  color: rgb(231, 213, 255);
+}
+
+#movies h1 {
+  color: rgb(187, 135, 255);
+}
+
+#titleDiv h1 {
+  color: rgb(187, 135, 255);
+  margin-left: 5vh;
+}
+
+#detailedDiv {
+  display: flex;
+  margin: 5vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-style: ridge;
+  border-color: rgba(104, 104, 104, 0.5);
+
+}
+
+#detailedDiv1 {
+  margin: 5vh;
+}
+
+#detailedDiv2 {
+  margin: 5vh;
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+#detailedLine {
+  border-right-style: ridge;
+  border-color: rgba(104, 104, 104, 0.5);
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.detailedPoster {
+  width: 50vh;
+  height: 80vh;
+}
+
